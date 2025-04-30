@@ -1,0 +1,71 @@
+body {
+    background: #0b0c10;
+    color: #ffffff;
+    font-family: 'Courier New', monospace;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    position: relative;
+  }
+  
+  .glow {
+    text-align: center;
+    margin-top: 60px;
+    font-size: 3rem;
+    animation: glow 2s ease-in-out infinite alternate;
+  }
+  
+  @keyframes glow {
+    from {
+      text-shadow: 0 0 10px #ff69b4, 0 0 20px #ff69b4, 0 0 30px #ff1493;
+    }
+    to {
+      text-shadow: 0 0 20px #ffb6c1, 0 0 30px #ff69b4, 0 0 40px #ff1493;
+    }
+  }
+  
+  .subtitle {
+    text-align: center;
+    margin-top: 10px;
+    color: #d1c4e9;
+  }
+  
+  .container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 10px;
+  }
+  
+  a {
+    color: #ffa3ff;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  
+  .firefly {
+    position: absolute;
+    width: 2px;
+    height: 2px;
+    background: #fffaa3;
+    border-radius: 50%;
+    animation: fly 10s infinite ease-in-out;
+    opacity: 0.8;
+  }
+  
+  @keyframes fly {
+    0% {
+      transform: translate(0, 0);
+    }
+    50% {
+      transform: translate(100vw, 100vh);
+    }
+    100% {
+      transform: translate(0, 0);
+    }
+  }
+  
